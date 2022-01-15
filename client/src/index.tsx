@@ -7,10 +7,12 @@ import App from './App';
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>
+        <CssBaseline/>
         <BrowserRouter>
-            <CssBaseline/>
             <App/>
         </BrowserRouter>
-    </ThemeProvider>,
+    </ThemeProvider>
+    ,
     document.getElementById('root')
-);
+)
+;

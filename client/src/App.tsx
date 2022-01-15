@@ -1,12 +1,17 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import Router from "./components/router/Router";
+import {Stack} from "@mui/material";
+import LeftMenu from "./components/Menu/LeftMenu";
+import RightMenu from "./components/Menu/RightMenu";
 
 const App = () => {
     return (
-        <div>
-          <Typography variant="h1">Привет</Typography>
-        </div>
+        <Stack direction="row">
+            <LeftMenu/>
+            <Router/>
+            <RightMenu/>
+        </Stack>
     );
-};
+}
 
-export default App;
+export default App

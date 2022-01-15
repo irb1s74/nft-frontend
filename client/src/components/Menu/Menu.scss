@@ -1,0 +1,47 @@
+.Menu {
+  background-color: #FFF;
+  height: 100vh;
+  max-width: 280px;
+  width: 100%;
+  box-shadow: rgba(4, 17, 29, 0.25) 0 0 8px 0;
+  padding: 15px 0 15px 0;
+  position: fixed;
+  top: 0;
+
+  &.left {
+    left: 0;
+
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__footer {
+  }
+
+  // right
+  &__header {
+    width: 80%;
+  }
+
+  &__content {
+    height: 90%;
+
+    .topDrop {
+      width: 100%;
+    }
+
+    .history {
+      width: 100%;
+    }
+  }
+
+
+}
