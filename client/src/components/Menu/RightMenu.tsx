@@ -10,24 +10,32 @@ import {
 import BrushIcon from '@mui/icons-material/Brush';
 import RestoreIcon from '@mui/icons-material/Restore';
 import {deepPurple, green, pink} from "@mui/material/colors";
+import {useTypedSelector} from "../../hooks/useTypedSelector";
+import {useActions} from "../../hooks/useAction";
 
 const RightMenu = () => {
+    const {user} = useTypedSelector(state => state.auth)
+    const isAuth = !!user.walletAddress
     return (
         <div className="Menu right">
             <Stack sx={{height: "100%",}} direction="column"
                    justifyContent="space-between"
                    alignItems="center">
-                <div className="Menu__header">
-                    <ListItem sx={{width: "100%"}}>
-                        <ListItemAvatar>
-                            <Avatar sx={{bgcolor: deepPurple[500]}} alt={'irb1s'} src={''}/>
-                        </ListItemAvatar>
-                        <ListItemText
-                            primary={'irb1s'}
-                            // secondary={' '}
-                        />
-                    </ListItem>
-                </div>
+                {isAuth && (
+                    <div className="Menu__header">
+
+                        <ListItem sx={{width: "100%"}}>
+                            <ListItemAvatar>
+                                <Avatar sx={{bgcolor: deepPurple[500]}} alt={'irb1s'} src={''}/>
+                            </ListItemAvatar>
+                            <ListItemText
+                                primary={'irb1s'}
+                                // secondary={' '}
+                            />
+                        </ListItem>
+
+                    </div>
+                )}
                 <div className="Menu__content">
                     <Stack sx={{height: "100%",}} direction="column"
                            justifyContent="flex-start"

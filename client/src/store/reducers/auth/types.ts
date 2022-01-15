@@ -4,11 +4,11 @@ export interface AuthState {
     user: IUser;
 }
 export enum AuthActionEnum {
-    SET_AUTH = "SET_AUTH",
+    SET_USER = "SET_USER",
 }
-export interface SetAuthAction {
-    type: AuthActionEnum.SET_AUTH;
+export interface SetUserAction {
+    type: AuthActionEnum.SET_USER;
     payload: IUser;
 }
 
-export type AuthAction = SetAuthAction
+export type AuthAction = SetUserAction

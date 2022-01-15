@@ -9,9 +9,20 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
 import JoinFullIcon from '@mui/icons-material/JoinFull';
 import {useLocation} from "react-router-dom";
+import {useTypedSelector} from "../../hooks/useTypedSelector";
+import {useActions} from "../../hooks/useAction";
 
 const LeftMenu = () => {
     let location = useLocation();
+    const {user} = useTypedSelector(state => state.auth)
+    const {login} = useActions()
+    const isAuth = !!user.walletAddress
+    const logIn = () => {
+        return () => {
+            login()
+        }
+    }
+
     return (
         <div className="Menu left">
             <Stack sx={{height: "100%",}} direction="column"
@@ -39,19 +50,19 @@ const LeftMenu = () => {
                         </ListItemIcon>
                         <ListItemText primary="Favorites"/>
                     </ListItemButton>
-                    <ListItemButton>
+                    <ListItemButton disabled={!isAuth}>
                         <ListItemIcon>
                             <PersonIcon/>
                         </ListItemIcon>
                         <ListItemText primary="Profile"/>
                     </ListItemButton>
-                    <ListItemButton>
+                    <ListItemButton disabled={!isAuth}>
                         <ListItemIcon>
                             <WalletIcon/>
                         </ListItemIcon>
                         <ListItemText primary="Wallet"/>
                     </ListItemButton>
-                    <ListItemButton>
+                    <ListItemButton disabled={!isAuth}>
                         <ListItemIcon>
                             <SettingsIcon/>
                         </ListItemIcon>
@@ -59,7 +70,13 @@ const LeftMenu = () => {
                     </ListItemButton>
                 </List>
                 <div className="Menu__footer">
-                    <Button variant={'text'}><LogoutIcon sx={{mr: "10px"}}/> Log out</Button>
+                    {isAuth ? (
+                            <Button variant={'text'}><LogoutIcon sx={{mr: "10px"}}/>Log out</Button>
+                        ) :
+                        (
+                            <Button onClick={logIn()} variant={'text'}>Login</Button>
+                        )
+                    }
                 </div>
             </Stack>
         </div>

@@ -1,7 +1,8 @@
 export interface IUser {
-    id: number;
+    walletAddress: string;
+    walletBalance: string;
     nickname: string;
+    about: string;
     banner: string;
     avatar: string;
-    about: string;
 }
