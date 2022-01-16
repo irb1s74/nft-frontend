@@ -1,0 +1,39 @@
+.Create {
+
+  .drop-label {
+    position: relative;
+  }
+
+  .drop-area {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    width: 380px;
+    height: 300px;
+    border: 5px dashed #DA4A5E;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .icon {
+      position: absolute;
+    }
+
+    .image-back {
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

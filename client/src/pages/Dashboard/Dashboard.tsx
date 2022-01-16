@@ -1,4 +1,4 @@
-import React, {FC, memo, useState} from 'react';
+import React, {memo, useState} from 'react';
 import {
     Button,
     Container,
@@ -45,33 +45,35 @@ const Filter = memo(() => {
     )
 })
 
-
-const Dasboard: FC = () => {
+const Dashboard = () => {
     return (
-        <Container sx={{ml: "280px", mr: "280px", pt: "15px"}} maxWidth="xl">
-            <Search/>
-            <Filter/>
-            <Grid
-                container
-                spacing={6}
-                columns={{xs: 1, sm: 4, md: 8, lg: 12, xl: 16}}
-            >
-                {
-                    Array(8).fill(0).map((card, index) =>
-                        <Grid key={index} item
-                              xs={1}
-                              sm={4}
-                              md={4}
-                              lg={4}
-                              xl={4}
-                        >
-                            <Art/>
-                        </Grid>
-                    )
-                }
-            </Grid>
-        </Container>
+        <main className='Page'>
+            <Container maxWidth="xl">
+                <Search/>
+                <Filter/>
+                <Grid
+                    container
+                    spacing={6}
+                    columns={{xs: 1, sm: 4, md: 8, lg: 12, xl: 16}}
+                >
+                    {
+                        Array(12).fill(0).map((card, index) =>
+                            <Grid key={index} item
+                                  xs={1}
+                                  sm={4}
+                                  md={4}
+                                  lg={4}
+                                  xl={4}
+                            >
+                                <Art/>
+                            </Grid>
+                        )
+                    }
+                </Grid>
+            </Container>
+        </main>
+
     );
 };
 
-export default memo(Dasboard);
+export default memo(Dashboard);

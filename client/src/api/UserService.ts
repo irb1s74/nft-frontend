@@ -1,6 +1,5 @@
 import axios, {AxiosResponse} from "axios";
 import {ROOT_URL} from "../config/url";
-import {IUser} from "../models/IUser";
 
 export default class UserService {
     static async Auth(walletAddress: string): Promise<AxiosResponse> {
