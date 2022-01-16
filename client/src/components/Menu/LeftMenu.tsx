@@ -3,20 +3,23 @@ import './Menu.scss'
 import {Button, List, ListItemButton, ListItemIcon, ListItemText, Stack, Typography} from "@mui/material";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LogoutIcon from '@mui/icons-material/Logout';
-import WalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import SettingsIcon from '@mui/icons-material/Settings';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
 import JoinFullIcon from '@mui/icons-material/JoinFull';
-import {useLocation} from "react-router-dom";
+import CreateIcon from '@mui/icons-material/Create';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {useActions} from "../../hooks/useAction";
+import {useLocation, useNavigate} from "react-router-dom";
+
 
 const LeftMenu = () => {
-    let location = useLocation();
     const {user} = useTypedSelector(state => state.auth)
+    const location = useLocation();
+    const navigate = useNavigate();
     const {logIn, logOut} = useActions()
     const isAuth = !!user.walletAddress
+
     const Login = () => {
         return () => {
             logIn()
@@ -26,6 +29,11 @@ const LeftMenu = () => {
         return () => [
             logOut()
         ]
+    }
+    const toNavigate = (link: string) => {
+        return () => {
+            navigate(link)
+        }
     }
 
     return (
@@ -39,37 +47,40 @@ const LeftMenu = () => {
                            alignItems="center"
                            spacing={2}>
                         <JoinFullIcon fontSize={"large"} color="secondary"/>
-                        <Typography variant="h5">Place of art</Typography>
+                        <Typography color='primary' variant="h5">Place of art</Typography>
                     </Stack>
                 </div>
                 <List sx={{width: '80%'}} disablePadding={false}>
-                    <ListItemButton selected={'/' === location.pathname}>
+                    <ListItemButton onClick={toNavigate('/')} selected={'/' === location.pathname}>
                         <ListItemIcon>
                             <DashboardIcon color={'/' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
                         <ListItemText primary="Dashboard"/>
                     </ListItemButton>
-                    <ListItemButton>
+                    <ListItemButton onClick={toNavigate('/favorites')} selected={'/favorites' === location.pathname}>
                         <ListItemIcon>
-                            <FavoriteIcon/>
+                            <FavoriteIcon color={'/favorites' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
                         <ListItemText primary="Favorites"/>
                     </ListItemButton>
-                    <ListItemButton disabled={!isAuth}>
+                    <ListItemButton onClick={toNavigate('/profile')} selected={'/profile' === location.pathname}
+                                    disabled={!isAuth}>
                         <ListItemIcon>
-                            <PersonIcon/>
+                            <PersonIcon color={'/profile' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
                         <ListItemText primary="Profile"/>
                     </ListItemButton>
-                    <ListItemButton disabled={!isAuth}>
+                    <ListItemButton onClick={toNavigate('/create')} selected={'/create' === location.pathname}
+                                    disabled={!isAuth}>
                         <ListItemIcon>
-                            <WalletIcon/>
+                            <CreateIcon color={'/create' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
-                        <ListItemText primary="Wallet"/>
+                        <ListItemText primary="Create"/>
                     </ListItemButton>
-                    <ListItemButton disabled={!isAuth}>
+                    <ListItemButton onClick={toNavigate('/settings')} selected={'/settings' === location.pathname}
+                                    disabled={!isAuth}>
                         <ListItemIcon>
-                            <SettingsIcon/>
+                            <SettingsIcon color={'/settings' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
                         <ListItemText primary="Settings"/>
                     </ListItemButton>

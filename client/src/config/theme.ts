@@ -91,7 +91,19 @@ export const theme = createTheme({
                         }
                     }
                 ]
+            },
+
+            MuiTab: {
+                styleOverrides: {
+                    root: {
+                        textTransform: 'none',
+                    },
+                    selected: {
+                        color: "#DA4A5E"
+                    }
+                }
             }
+
         }
     },
 )

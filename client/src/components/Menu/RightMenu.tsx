@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import './Menu.scss'
 import {
     Avatar,
-    Button, Divider, List,
+    Divider, List,
     ListItem,
     ListItemAvatar, ListItemText,
     Stack, Typography,
@@ -11,7 +11,6 @@ import BrushIcon from '@mui/icons-material/Brush';
 import RestoreIcon from '@mui/icons-material/Restore';
 import {deepPurple, green, pink} from "@mui/material/colors";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
-import LocalAtmIcon from "@mui/icons-material/LocalAtm";
 
 const RightMenu = () => {
     const {user} = useTypedSelector(state => state.auth)
