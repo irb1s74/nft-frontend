@@ -5,4 +5,5 @@ export interface IUser {
     about: string;
     banner: string;
     avatar: string;
+    registrationDate: string;
 }

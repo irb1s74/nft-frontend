@@ -16,6 +16,7 @@ import LocalAtmIcon from "@mui/icons-material/LocalAtm";
 const RightMenu = () => {
     const {user} = useTypedSelector(state => state.auth)
     const isAuth = !!user.walletAddress
+    const nickname = isAuth ? user.nickname ? user.nickname : user.walletAddress.split('').slice(0, 6).join('') + '...' + user.walletAddress.split('').slice(user.walletAddress.length - 4, user.walletAddress.length).join('') : ''
     return (
         <div className="Menu right">
             <Stack sx={{height: "100%",}} direction="column"
@@ -29,11 +30,11 @@ const RightMenu = () => {
                                     <Avatar sx={{bgcolor: deepPurple[500]}} alt={'irb1s'} src={''}/>
                                 </ListItemAvatar>
                                 <ListItemText
-                                    primary={user.nickname.length > 30 ? user.nickname.split('').slice(0, 6).join('') + '...' + user.nickname.split('').slice(user.nickname.length - 4, user.nickname.length).join('') : user.nickname}
+                                    primary={nickname}
                                     // secondary={' '}
                                 />
                             </ListItem>
-                                </div>
+                        </div>
                         <Divider sx={{width: '100%'}}/>
                     </React.Fragment>
                 )}

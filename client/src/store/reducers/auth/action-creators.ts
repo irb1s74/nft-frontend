@@ -2,7 +2,7 @@ import {IUser} from "../../../models/IUser";
 import {AuthActionEnum, SetUserAction} from "./types";
 import {AppDispatch} from "../../index";
 import {ethers} from "ethers";
-
+import UserService from "../../../api/UserService";
 
 export const AuthActionCreators = {
     setUser: (user: IUser): SetUserAction => ({type: AuthActionEnum.SET_USER, payload: user}),
@@ -16,15 +16,18 @@ export const AuthActionCreators = {
                     window.ethereum.request({
                         method: 'eth_getBalance',
                         params: [address[0], 'latest']
-                    }).then((res: any) => {
+                    }).then(async (res: any) => {
+                        const response = await UserService.Auth(address[0]);
+                        const {about, nickname, banner, avatar, createdAt} = response.data
                         dispatch(AuthActionCreators.setUser(
                                 {
                                     walletAddress: address[0],
                                     walletBalance: ethers.utils.formatEther(res),
-                                    nickname: address[0],
-                                    about: '',
-                                    banner: '',
-                                    avatar: '',
+                                    nickname: nickname,
+                                    about: about,
+                                    banner: banner,
+                                    avatar: avatar,
+                                    registrationDate: createdAt
                                 }
                             )
                         )
@@ -44,6 +47,7 @@ export const AuthActionCreators = {
                         about: '',
                         banner: '',
                         avatar: '',
+                        registrationDate: '',
                     }
                 )
             )
