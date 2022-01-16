@@ -1,5 +1,6 @@
 import React, {FC, memo, useState} from 'react';
 import {
+    Button,
     Container,
     FormControl,
     Grid,
@@ -35,6 +36,11 @@ const Filter = memo(() => {
                     <MenuItem value={30}>Price: High to Low</MenuItem>
                 </Select>
             </FormControl>
+            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                <Button variant='filter'>All</Button>
+                <Button variant='filter' color='secondary'>Art</Button>
+                <Button variant='filter'>Music</Button>
+            </Stack>
         </Stack>
     )
 })

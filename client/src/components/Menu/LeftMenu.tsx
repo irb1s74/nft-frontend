@@ -15,12 +15,17 @@ import {useActions} from "../../hooks/useAction";
 const LeftMenu = () => {
     let location = useLocation();
     const {user} = useTypedSelector(state => state.auth)
-    const {login} = useActions()
+    const {logIn, logOut} = useActions()
     const isAuth = !!user.walletAddress
-    const logIn = () => {
+    const Login = () => {
         return () => {
-            login()
+            logIn()
         }
+    }
+    const Logout = () => {
+        return () => [
+            logOut()
+        ]
     }
 
     return (
@@ -71,10 +76,10 @@ const LeftMenu = () => {
                 </List>
                 <div className="Menu__footer">
                     {isAuth ? (
-                            <Button variant={'text'}><LogoutIcon sx={{mr: "10px"}}/>Log out</Button>
+                            <Button onClick={Logout()} variant={'text'}><LogoutIcon sx={{mr: "10px"}}/>Log out</Button>
                         ) :
                         (
-                            <Button onClick={logIn()} variant={'text'}>Login</Button>
+                            <Button onClick={Login()} variant={'text'}>Login</Button>
                         )
                     }
                 </div>

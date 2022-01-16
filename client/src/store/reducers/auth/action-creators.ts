@@ -6,7 +6,7 @@ import {ethers} from "ethers";
 
 export const AuthActionCreators = {
     setUser: (user: IUser): SetUserAction => ({type: AuthActionEnum.SET_USER, payload: user}),
-    login: () => async (dispatch: AppDispatch) => {
+    logIn: () => async (dispatch: AppDispatch) => {
         try {
             if (!window.ethereum) {
                 throw new Error('Please install metaMask')
@@ -31,7 +31,24 @@ export const AuthActionCreators = {
                     })
                 })
         } catch (e) {
-            console.log(e + "1232131231")
+            console.log(e)
+        }
+    },
+    logOut: () => (dispatch: AppDispatch) => {
+        try {
+            dispatch(AuthActionCreators.setUser(
+                    {
+                        walletAddress: '',
+                        walletBalance: '',
+                        nickname: '',
+                        about: '',
+                        banner: '',
+                        avatar: '',
+                    }
+                )
+            )
+        } catch (e) {
+            console.log(e)
         }
     }
 }

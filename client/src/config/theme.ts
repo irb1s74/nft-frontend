@@ -1,5 +1,12 @@
 import {createTheme} from "@mui/material";
 
+
+declare module '@mui/material/Button' {
+    interface ButtonPropsVariantOverrides {
+        filter: true;
+    }
+}
+
 export const theme = createTheme({
         typography: {
             fontFamily: [
@@ -51,6 +58,19 @@ export const theme = createTheme({
                         props: {variant: 'text'},
                         style: {
                             color: "#DA4A5E"
+                        }
+                    },
+                    {
+                        props: {variant: "filter"},
+                        style: {
+                            textTransform: 'none',
+                            color: '#29253C',
+                        }
+                    },
+                    {
+                        props: {variant: "filter", color: 'secondary'},
+                        style: {
+                            backgroundColor: '#F3F3F3'
                         }
                     }
                 ]

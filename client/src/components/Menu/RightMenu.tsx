@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import './Menu.scss'
 import {
     Avatar,
-    Button, List,
+    Button, Divider, List,
     ListItem,
     ListItemAvatar, ListItemText,
     Stack, Typography,
@@ -11,7 +11,7 @@ import BrushIcon from '@mui/icons-material/Brush';
 import RestoreIcon from '@mui/icons-material/Restore';
 import {deepPurple, green, pink} from "@mui/material/colors";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
-import {useActions} from "../../hooks/useAction";
+import LocalAtmIcon from "@mui/icons-material/LocalAtm";
 
 const RightMenu = () => {
     const {user} = useTypedSelector(state => state.auth)
@@ -22,19 +22,20 @@ const RightMenu = () => {
                    justifyContent="space-between"
                    alignItems="center">
                 {isAuth && (
-                    <div className="Menu__header">
-
-                        <ListItem sx={{width: "100%"}}>
-                            <ListItemAvatar>
-                                <Avatar sx={{bgcolor: deepPurple[500]}} alt={'irb1s'} src={''}/>
-                            </ListItemAvatar>
-                            <ListItemText
-                                primary={'irb1s'}
-                                // secondary={' '}
-                            />
-                        </ListItem>
-
-                    </div>
+                    <React.Fragment>
+                        <div className="Menu__header">
+                            <ListItem>
+                                <ListItemAvatar>
+                                    <Avatar sx={{bgcolor: deepPurple[500]}} alt={'irb1s'} src={''}/>
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary={user.nickname.length > 30 ? user.nickname.split('').slice(0, 6).join('') + '...' + user.nickname.split('').slice(user.nickname.length - 4, user.nickname.length).join('') : user.nickname}
+                                    // secondary={' '}
+                                />
+                            </ListItem>
+                                </div>
+                        <Divider sx={{width: '100%'}}/>
+                    </React.Fragment>
                 )}
                 <div className="Menu__content">
                     <Stack sx={{height: "100%",}} direction="column"
