@@ -42,11 +42,13 @@ const Create = () => {
     return (
         <main className='Page'>
             <div className='Create'>
-                <Container maxWidth='xl'>
+                <Container maxWidth='md'>
                     <Typography sx={{mb: 5}} variant='h4'>Create new Item</Typography>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <Stack direction='column' justifyContent='space-between'
-                               alignItems="center" spacing={5}>
+                        <Stack sx={{
+                            mt: 10,
+                            mb: 5, width: "100%"
+                        }} direction='column' spacing={5}>
                             <label className='drop-label'>
                                 <div
                                     onDragStart={(e) => e.preventDefault()}
@@ -81,11 +83,9 @@ const Create = () => {
                                     </IconButton>
                                 )}
                             </label>
-
                             <TextField
-                                fullWidth
+                                focused
                                 required={true}
-                                sx={{display: "block", maxWidth: '700px'}}
                                 label="Name"
                                 error={!!errors?.name}
                                 {...register("name", {
@@ -95,9 +95,8 @@ const Create = () => {
                                 })}
                             />
                             <TextField
-                                fullWidth
+                                focused
                                 required={true}
-                                sx={{display: "block", mb: 4, maxWidth: '700px'}}
                                 label="Description"
                                 error={!!errors?.description}
                                 {...register("description", {
@@ -107,9 +106,8 @@ const Create = () => {
                                 })}
                                 multiline
                                 rows={4}/>
-                            <Button sx={{display: "block"}} size={'large'} variant="contained"
-                                    type="submit">create</Button>
                         </Stack>
+                        <Button size={'large'} variant="contained" type="submit">create</Button>
                     </form>
                 </Container>
             </div>

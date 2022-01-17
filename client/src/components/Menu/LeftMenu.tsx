@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 import './Menu.scss'
 import {Button, List, ListItemButton, ListItemIcon, ListItemText, Stack, Typography} from "@mui/material";
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import MovingIcon from '@mui/icons-material/Moving';
 import LogoutIcon from '@mui/icons-material/Logout';
 import SettingsIcon from '@mui/icons-material/Settings';
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -11,7 +11,6 @@ import CreateIcon from '@mui/icons-material/Create';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {useActions} from "../../hooks/useAction";
 import {useLocation, useNavigate} from "react-router-dom";
-
 
 const LeftMenu = () => {
     const {user} = useTypedSelector(state => state.auth)
@@ -57,11 +56,11 @@ const LeftMenu = () => {
                         </ListItemIcon>
                         <ListItemText primary="Dashboard"/>
                     </ListItemButton>
-                    <ListItemButton onClick={toNavigate('/favorites')} selected={'/favorites' === location.pathname}>
+                    <ListItemButton onClick={toNavigate('/activity')} selected={'/activity' === location.pathname}>
                         <ListItemIcon>
-                            <FavoriteIcon color={'/favorites' === location.pathname ? 'secondary' : 'inherit'}/>
+                            <MovingIcon color={'/activity' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
-                        <ListItemText primary="Favorites"/>
+                        <ListItemText primary="Activity"/>
                     </ListItemButton>
                     <ListItemButton onClick={toNavigate('/profile')} selected={'/profile' === location.pathname}
                                     disabled={!isAuth}>

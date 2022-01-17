@@ -1,51 +1,104 @@
-import React, {memo} from 'react';
+import React, {memo, useState} from 'react';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
-import {Avatar, Box, Container, Grid, Stack, Tab, Tabs, Typography} from "@mui/material";
+import {
+    Avatar,
+    Box,
+    Container,
+    Grid,
+    Stack,
+    Tab,
+    Tabs,
+    Typography,
+    SelectChangeEvent,
+    FormControl,
+    Select,
+    MenuItem,
+    InputLabel,
+    Button
+} from "@mui/material";
 import EditIcon from '@mui/icons-material/Edit';
 import './Profile.scss'
 import Art from "../../components/Art/Art";
 
 
+const Filter = memo(() => {
+    const [valueSort, setValueSort] = useState('')
+    const handleChange = (event: SelectChangeEvent) => {
+        setValueSort(event.target.value as string)
+    }
+    return (
+        <Stack sx={{width: "100%", marginBottom: "20px", marginTop: '20px'}} direction="row"
+               justifyContent="space-between"
+               alignItems="center">
+            <FormControl sx={{width: '200px'}}>
+                <InputLabel id="demo-simple-select-label">Sort By</InputLabel>
+                <Select
+                    value={valueSort}
+                    label={'Sort By'}
+                    onChange={handleChange}
+                >
+                    <MenuItem value={10}>Following</MenuItem>
+                    <MenuItem value={20}>Price: Low to High</MenuItem>
+                    <MenuItem value={30}>Price: High to Low</MenuItem>
+                </Select>
+            </FormControl>
+            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={2}>
+                <Button variant='filter'>All</Button>
+                <Button variant='filter' color='secondary'>Art</Button>
+                <Button variant='filter'>Music</Button>
+            </Stack>
+        </Stack>
+    )
+})
+
+
 const ProfileNavigate = memo(() => {
-    const [value, setValue] = React.useState('1');
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    const [value, setValue] = React.useState(1);
+    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
     return (
-        <Box sx={{mt: 6, width: '100%', borderBottom: 1, borderColor: 'divider'}}>
-            <Tabs textColor="secondary"
-                  indicatorColor="secondary"
-                  value={value} onChange={handleChange} centered>
-                <Tab label="On sale"/>
-                <Tab label="Owned"/>
-                <Tab label="Created"/>
-                <Tab label="Collections"/>
-            </Tabs>
+        <React.Fragment>
+            <Box sx={{mt: 6, width: '100%', borderBottom: 1, borderColor: 'divider'}}>
+                <Tabs textColor="secondary"
+                      indicatorColor="secondary"
+                      value={value} onChange={handleChange} centered>
+                    <Tab label="On sale"/>
+                    <Tab label="Owned"/>
+                    <Tab label="Created"/>
+                    <Tab label="Favorited"/>
+                    <Tab label="Collections"/>
+                </Tabs>
+            </Box>
             {
-                value === '1' || value === '2' && (
-                    <Grid
-                        container
-                        spacing={6}
-                        columns={{xs: 1, sm: 4, md: 8, lg: 12, xl: 16}}
-                    >
-                        {
-                            Array(12).fill(0).map((card, index) =>
-                                <Grid key={index} item
-                                      xs={1}
-                                      sm={4}
-                                      md={4}
-                                      lg={4}
-                                      xl={4}
-                                >
-                                    <Art/>
-                                </Grid>
-                            )
-                        }
-                    </Grid>
+                value === 0 || value === 1 && (
+                    <>
+                        <Filter/>
+                        <Grid
+                            container
+                            spacing={6}
+                            columns={{xs: 1, sm: 4, md: 8, lg: 12, xl: 16}}
+                        >
+                            {
+                                Array(6).fill(0).map((card, index) =>
+                                    <Grid key={index} item
+                                          xs={1}
+                                          sm={4}
+                                          md={4}
+                                          lg={4}
+                                          xl={4}
+                                    >
+                                        <Art/>
+                                    </Grid>
+                                )
+                            }
+                        </Grid>
+                    </>
                 )
             }
-        </Box>
+        </React.Fragment>
     )
+
 })
 
 
