@@ -3,6 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
+    animation: showPage .3s;
 }
 
 body {
@@ -21,4 +22,19 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #29253C;
     border-radius: 10px;
+}
+
+*::selection {
+    color: #29253C;
+    background-color: #DA4A5E;
+}
+
+@keyframes showPage {
+    from {
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
