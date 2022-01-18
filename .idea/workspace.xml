@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d879f5ae-426d-4f42-a1ae-fa42c40f141b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/UserService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Art/Art.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Menu/LeftMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Menu/Menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Menu/RightMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/Search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/router/Router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/url.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useAction.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useIPFS.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useTypedSelector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/IUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Activity/Activity.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Activity/Activity.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Create/Create.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Create/Create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/action-creators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth/action-creators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/UserService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Art/Art.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Menu/LeftMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Menu/Menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Menu/RightMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Search/Search.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/router/Router.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/config/theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/config/url.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useAction.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useIPFS.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useTypedSelector.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/models/IUser.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Activity/Activity.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Activity/Activity.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Create/Create.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Create/Create.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Dashboard/Dashboard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Dashboard/Dashboard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Profile/Profile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Profile/Profile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Settings/Settings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Settings/Settings.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/action-creators.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/auth/action-creators.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/auth/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/auth/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/development-deploy.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.development.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.production.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/nest-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/users/dto/auth-user.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/users/users.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/users/users.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/users/users.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/users/users.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2853886e-0ba1-481a-9011-839ee0b9a67f" />
+        <option name="url" value="https://github.com/irb1s-corporation/world_art.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectId" id="23gT5qnoeBpUHjVEDyYnKreL2Ca" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="sshConsole" />
+    <property name="ts.external.directory.path" value="D:\app\WebStorm 2021.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\world-art\client\src\components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d879f5ae-426d-4f42-a1ae-fa42c40f141b" name="Changes" comment="" />
+      <created>1642154556247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642154556247</updated>
+      <workItem from="1642154557387" duration="12622000" />
+      <workItem from="1642223351656" duration="1463000" />
+      <workItem from="1642224903400" duration="4366000" />
+      <workItem from="1642237975422" duration="19528000" />
+      <workItem from="1642261636731" duration="2593000" />
+      <workItem from="1642320286191" duration="65000" />
+      <workItem from="1642320404326" duration="23118000" />
+      <workItem from="1642403277114" duration="65000" />
+      <workItem from="1642403364369" duration="748000" />
+      <workItem from="1642404198479" duration="16000" />
+      <workItem from="1642404221440" duration="11000" />
+      <workItem from="1642404241498" duration="12000" />
+      <workItem from="1642404303542" duration="8426000" />
+      <workItem from="1642434336636" duration="220000" />
+      <workItem from="1642480004215" duration="1776000" />
+      <workItem from="1642481813059" duration="6000" />
+      <workItem from="1642481957041" duration="41000" />
+      <workItem from="1642482017484" duration="2361000" />
+      <workItem from="1642496768769" duration="260000" />
+      <workItem from="1642498232545" duration="282000" />
+      <workItem from="1642498529267" duration="22000" />
+      <workItem from="1642498611467" duration="114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

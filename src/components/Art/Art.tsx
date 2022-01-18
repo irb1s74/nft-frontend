@@ -1,7 +1,7 @@
 import React from 'react';
-import {Box, Button, Card, CardActions, CardContent, CardMedia, IconButton, Stack, Typography} from "@mui/material";
+import {Button, Card, CardActions, CardContent, CardMedia, IconButton, Stack, Typography} from "@mui/material";
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+// import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Art = () => {
