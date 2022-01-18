@@ -11,17 +11,18 @@ import BrushIcon from '@mui/icons-material/Brush';
 import RestoreIcon from '@mui/icons-material/Restore';
 import {deepPurple, green, pink} from "@mui/material/colors";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
+import {useMoralis} from 'react-moralis';
 
 const RightMenu = () => {
-    const {user} = useTypedSelector(state => state.auth)
-    const isAuth = !!user.walletAddress
-    const nickname = isAuth ? user.nickname ? user.nickname : user.walletAddress.split('').slice(0, 6).join('') + '...' + user.walletAddress.split('').slice(user.walletAddress.length - 4, user.walletAddress.length).join('') : ''
+    const {authenticate, isAuthenticated, logout, user} = useMoralis();
+    const nickname = user?.attributes.ethAddress.split('').slice(0, 6).join('') + '...' + user?.attributes.ethAddress.split('').slice(user?.attributes.ethAddress.length - 4, user?.attributes.ethAddress.length).join('')
+    console.log(user)
     return (
         <div className="Menu right">
             <Stack sx={{height: "100%",}} direction="column"
                    justifyContent="space-between"
                    alignItems="center">
-                {isAuth && (
+                {isAuthenticated && (
                     <React.Fragment>
                         <div className="Menu__header">
                             <ListItem>

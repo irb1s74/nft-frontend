@@ -8,25 +8,21 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
 import JoinFullIcon from '@mui/icons-material/JoinFull';
 import CreateIcon from '@mui/icons-material/Create';
-import {useTypedSelector} from "../../hooks/useTypedSelector";
-import {useActions} from "../../hooks/useAction";
 import {useLocation, useNavigate} from "react-router-dom";
+import { useMoralis } from "react-moralis";
 
 const LeftMenu = () => {
-    const {user} = useTypedSelector(state => state.auth)
     const location = useLocation();
     const navigate = useNavigate();
-    const {logIn, logOut} = useActions()
-    const isAuth = !!user.walletAddress
-
+    const {authenticate, isAuthenticated , logout } = useMoralis();
     const Login = () => {
         return () => {
-            logIn()
+            authenticate()
         }
     }
     const Logout = () => {
         return () => [
-            logOut()
+            logout()
         ]
     }
     const toNavigate = (link: string) => {
@@ -63,21 +59,21 @@ const LeftMenu = () => {
                         <ListItemText primary="Activity"/>
                     </ListItemButton>
                     <ListItemButton onClick={toNavigate('/profile')} selected={'/profile' === location.pathname}
-                                    disabled={!isAuth}>
+                                    disabled={!isAuthenticated}>
                         <ListItemIcon>
                             <PersonIcon color={'/profile' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
                         <ListItemText primary="Profile"/>
                     </ListItemButton>
                     <ListItemButton onClick={toNavigate('/create')} selected={'/create' === location.pathname}
-                                    disabled={!isAuth}>
+                                    disabled={!isAuthenticated}>
                         <ListItemIcon>
                             <CreateIcon color={'/create' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
                         <ListItemText primary="Create"/>
                     </ListItemButton>
                     <ListItemButton onClick={toNavigate('/settings')} selected={'/settings' === location.pathname}
-                                    disabled={!isAuth}>
+                                    disabled={!isAuthenticated}>
                         <ListItemIcon>
                             <SettingsIcon color={'/settings' === location.pathname ? 'secondary' : 'inherit'}/>
                         </ListItemIcon>
@@ -85,7 +81,7 @@ const LeftMenu = () => {
                     </ListItemButton>
                 </List>
                 <div className="Menu__footer">
-                    {isAuth ? (
+                    {isAuthenticated ? (
                             <Button onClick={Logout()} variant={'text'}><LogoutIcon sx={{mr: "10px"}}/>Log out</Button>
                         ) :
                         (

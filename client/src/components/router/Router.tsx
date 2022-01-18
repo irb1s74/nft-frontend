@@ -6,12 +6,13 @@ import Profile from "../../pages/Profile/Profile";
 import Create from "../../pages/Create/Create";
 import Settings from "../../pages/Settings/Settings";
 import Activity from "../../pages/Activity/Activity";
+import {useMoralis} from "react-moralis";
 
 const Router = () => {
-    const {user} = useTypedSelector(state => state.auth)
-    const isAuth = !!user.walletAddress
+    const {isAuthenticated} = useMoralis();
+
     return (
-        isAuth ? (
+        isAuthenticated ? (
             <Routes>
                 <Route path={'/'} element={<Dashboard/>}/>
                 <Route path={'/profile'} element={<Profile/>}/>

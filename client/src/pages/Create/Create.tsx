@@ -1,5 +1,5 @@
 import React, {MutableRefObject, useRef, useState} from 'react';
-import {Box, Button, Container, IconButton, Stack, TextField, Typography} from "@mui/material";
+import {Button, Container, IconButton, Stack, TextField, Typography} from "@mui/material";
 import {SubmitHandler, useForm} from "react-hook-form";
 import ImageIcon from '@mui/icons-material/Image';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
@@ -12,7 +12,7 @@ type Inputs = {
 
 
 const Create = () => {
-    const {register, handleSubmit, watch, formState: {errors}} = useForm<Inputs>();
+    const {register, handleSubmit, formState: {errors}} = useForm<Inputs>();
     const [file, setFile] = useState('');
     const inputFile = useRef(document.createElement("input")) as MutableRefObject<HTMLInputElement>;
 
