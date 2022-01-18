@@ -16,7 +16,6 @@ import {useMoralis} from 'react-moralis';
 const RightMenu = () => {
     const {authenticate, isAuthenticated, logout, user} = useMoralis();
     const nickname = user?.attributes.ethAddress.split('').slice(0, 6).join('') + '...' + user?.attributes.ethAddress.split('').slice(user?.attributes.ethAddress.length - 4, user?.attributes.ethAddress.length).join('')
-    console.log(user)
     return (
         <div className="Menu right">
             <Stack sx={{height: "100%",}} direction="column"

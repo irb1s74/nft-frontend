@@ -7,6 +7,7 @@ import Create from "../../pages/Create/Create";
 import Settings from "../../pages/Settings/Settings";
 import Activity from "../../pages/Activity/Activity";
 import {useMoralis} from "react-moralis";
+import Collection from "../../pages/Collection/Collection";
 
 const Router = () => {
     const {isAuthenticated} = useMoralis();
@@ -19,6 +20,8 @@ const Router = () => {
                 <Route path={'/activity'} element={<Activity/>}/>
                 <Route path={'/create'} element={<Create/>}/>
                 <Route path={'/settings'} element={<Settings/>}/>
+                <Route path={'/settings'} element={<Settings/>}/>
+                <Route path={'/collection'} element={<Collection/>}/>
                 <Route path={'*'} element={<Navigate to="/"/>}/>
             </Routes>
         ) : (

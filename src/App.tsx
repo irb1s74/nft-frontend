@@ -6,6 +6,7 @@ import './App.css'
 
 
 const App = () => {
+
     return (
         <Stack direction="row">
             <LeftMenu/>

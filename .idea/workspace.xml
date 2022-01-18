@@ -5,116 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d879f5ae-426d-4f42-a1ae-fa42c40f141b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/UserService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Art/Art.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Menu/LeftMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Menu/Menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Menu/RightMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Search/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/router/Router.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/theme.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/url.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useAction.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useIPFS.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useTypedSelector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/IUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Activity/Activity.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Activity/Activity.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Create/Create.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Create/Create.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Settings/Settings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/action-creators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth/action-creators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/UserService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Art/Art.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Menu/LeftMenu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Menu/Menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Menu/RightMenu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Search/Search.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/router/Router.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/config/theme.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/config/url.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/useAction.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/useIPFS.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/useTypedSelector.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/models/IUser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Activity/Activity.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Activity/Activity.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Create/Create.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Create/Create.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Dashboard/Dashboard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Dashboard/Dashboard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Profile/Profile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Profile/Profile.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Settings/Settings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Settings/Settings.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/action-creators.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/auth/action-creators.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/auth/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/auth/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/reducers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/development-deploy.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.development.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.production.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/nest-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/users/dto/auth-user.dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/users/users.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/users/users.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/users/users.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/users/users.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tsconfig.build.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Collection/Collection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/RightMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/RightMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/router/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -163,6 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -207,7 +105,11 @@
       <workItem from="1642496768769" duration="260000" />
       <workItem from="1642498232545" duration="282000" />
       <workItem from="1642498529267" duration="22000" />
-      <workItem from="1642498611467" duration="114000" />
+      <workItem from="1642498611467" duration="1274000" />
+      <workItem from="1642501946576" duration="14000" />
+      <workItem from="1642501976579" duration="27000" />
+      <workItem from="1642502043366" duration="522000" />
+      <workItem from="1642510042523" duration="1171000" />
     </task>
     <servers />
   </component>
